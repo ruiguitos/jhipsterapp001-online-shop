@@ -1,0 +1,37 @@
+GET {{keycloak}}/realms/{{realm}}/.well-known/openid-configuration
+###
+
+# Deprecated password grant
+# POST {{keycloak}}/auth/realms/jhipster/protocol/openid-connect/token
+# Content-Type: application/x-www-form-urlencoded
+#
+# client_id=bearcat&username=admin&password=admin&grant_type=password
+#
+#
+# > {%
+#     client.global.set("authToken", response.body.access_token);
+# %}
+#
+
+POST http://localhost:9081/realms/jhipster/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=internal&client_secret=internal
+
+> {%
+    client.global.set("authToken", response.body.access_token);
+%}
+####
+#
+#POST http://localhost:9081/realms/jhipster/protocol/openid-connect/tokenprotocol/openid-connect/auth?client_id=web_app&response_type=code&state=fj8o3n7bdy1op5
+#
+#
+####
+#POST http://localhost:9081/realms/jhipster/protocol/openid-connect/token
+#Content-Type: application/x-www-form-urlencoded
+#
+#grant_type=authorization_code&client_id=web_app&client_secret=web_app&username=admin&password=admin&code
+#
+#> {%
+#    client.global.set("authToken", response.body.access_token);
+#%}

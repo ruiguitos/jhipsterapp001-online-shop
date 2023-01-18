@@ -1,0 +1,26 @@
+# Retrieve all customers
+GET {{host}}/api/customers
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+Accept: application/json
+###
+
+
+GET http://localhost:9060/api/customers?sort=id,asc&page=2&size=2
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+Accept: application/json
+###
+
+# Retrieve all customers
+POST {{host}}/api/customers
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstName": "Rui",
+    "lastName": "Santos",
+    "email": "rui.santos@grupo-valco.com",
+    "telephone":"244732012"
+}

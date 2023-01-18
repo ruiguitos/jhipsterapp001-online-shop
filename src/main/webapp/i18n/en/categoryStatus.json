@@ -1,0 +1,10 @@
+{
+  "jhipsterapp001App": {
+    "CategoryStatus": {
+      "null": "",
+      "AVAILABLE": "AVAILABLE",
+      "RESTRICTED": "RESTRICTED",
+      "DISABLED": "DISABLED"
+    }
+  }
+}

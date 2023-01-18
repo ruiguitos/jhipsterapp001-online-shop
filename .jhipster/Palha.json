@@ -1,0 +1,15 @@
+{
+  "changelogDate": "20230116160215",
+  "fields": [
+    {
+      "fieldName": "julia",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    }
+  ],
+  "name": "Palha",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
