@@ -13,7 +13,7 @@ export default class Palha extends Vue {
   @Inject('alertService') private alertService: () => AlertService;
 
   private removeId: number = null;
-  public itemsPerPage = 5;
+  public itemsPerPage = 20;
   public queryCount: number = null;
   public page = 1;
   public previousPage = 1;

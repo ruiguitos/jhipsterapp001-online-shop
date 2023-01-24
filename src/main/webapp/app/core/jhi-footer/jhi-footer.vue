@@ -1,7 +1,6 @@
 <template>
   <div id="footer" class="footer">
-    <p>Julia Palha is great</p>
-    <p>Julia Palha is great</p>
+    <p><br>Julia Palha</br>  is great</p>
   </div>
 </template>
 

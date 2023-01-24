@@ -65,4 +65,5 @@ public class AccountResource {
         log.debug("REST request to check if the current user is authenticated");
         return request.getPrincipal().map(Principal::getName);
     }
+
 }

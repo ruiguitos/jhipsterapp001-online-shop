@@ -15,7 +15,7 @@
             <input type="text" class="form-control" id="id" name="id" v-model="palha.id" readonly />
           </div>
           <div class="form-group">
-            <label class="form-control-label" v-text="$t('jhipsterapp001App.palha.julia')" for="palha-julia">Júlia Palha</label>
+            <label class="form-control-label" v-text="$t('jhipsterapp001App.palha.julia')" for="palha-julia">Julia</label>
             <input
               type="text"
               class="form-control"

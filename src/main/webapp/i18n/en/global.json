@@ -13,6 +13,8 @@
         "address": "Address",
         "wishList": "Wish List",
         "palha": "Júlia Palha",
+        "palha": "Palha",
+        "teste": "Teste",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

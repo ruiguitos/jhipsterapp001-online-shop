@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 id="page-heading" data-cy="PalhaHeading">
-      <span v-text="$t('jhipsterapp001App.palha.home.title')" id="palha-heading">Júlia Palha</span>
+      <span v-text="$t('jhipsterapp001App.palha.home.title')" id="palha-heading">Palhas</span>
       <div class="d-flex justify-content-end">
         <button class="btn btn-info mr-2" v-on:click="handleSyncList" :disabled="isFetching">
           <font-awesome-icon icon="sync" :spin="isFetching"></font-awesome-icon>
@@ -34,7 +34,7 @@
             </th>
             <th scope="row" v-on:click="changeOrder('julia')">
               <span v-text="$t('jhipsterapp001App.palha.julia')">Julia</span>
-              <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'Tamanho'"></jhi-sort-indicator>
+              <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'julia'"></jhi-sort-indicator>
             </th>
             <th scope="row"></th>
           </tr>

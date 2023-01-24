@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 id="page-heading" data-cy="CategoryHeading">
-      <span v-text="$t('jhipsterapp001App.category.home.title')" id="category-heading">Categories4444</span>
+      <span v-text="$t('jhipsterapp001App.category.home.title')" id="category-heading">Categories</span>
       <div class="d-flex justify-content-end">
         <button class="btn btn-info mr-2" v-on:click="handleSyncList" :disabled="isFetching">
           <font-awesome-icon icon="sync" :spin="isFetching"></font-awesome-icon>

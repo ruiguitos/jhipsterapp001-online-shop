@@ -40,10 +40,16 @@
               <span v-text="$t('jhipsterapp001App.customer.lastName')">Last Name</span>
               <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'lastName'"></jhi-sort-indicator>
             </th>
+
+
+
             <th scope="row" v-on:click="changeOrder('email')">
               <span v-text="$t('jhipsterapp001App.customer.email')">Email</span>
               <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'email'"></jhi-sort-indicator>
             </th>
+
+
+
             <th scope="row" v-on:click="changeOrder('telephone')">
               <span v-text="$t('jhipsterapp001App.customer.telephone')">Telephone</span>
               <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'telephone'"></jhi-sort-indicator>

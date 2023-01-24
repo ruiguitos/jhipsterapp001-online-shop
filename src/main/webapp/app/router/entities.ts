@@ -1,4 +1,4 @@
-import { Authority } from '@/shared/security/authority';
+import {Authority} from '@/shared/security/authority';
 /* tslint:disable */
 // prettier-ignore
 const Entities = () => import('@/entities/entities.vue');
@@ -29,6 +29,8 @@ const Palha = () => import('@/entities/palha/palha.vue');
 const PalhaUpdate = () => import('@/entities/palha/palha-update.vue');
 // prettier-ignore
 const PalhaDetails = () => import('@/entities/palha/palha-details.vue');
+// prettier-ignore
+
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default {
@@ -45,19 +47,19 @@ export default {
       path: 'category/new',
       name: 'CategoryCreate',
       component: CategoryUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'category/:categoryId/edit',
       name: 'CategoryEdit',
       component: CategoryUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'category/:categoryId/view',
       name: 'CategoryView',
       component: CategoryDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.USER, Authority.TESTE] },
     },
     {
       path: 'product',
@@ -69,19 +71,19 @@ export default {
       path: 'product/new',
       name: 'ProductCreate',
       component: ProductUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'product/:productId/edit',
       name: 'ProductEdit',
       component: ProductUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'product/:productId/view',
       name: 'ProductView',
       component: ProductDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.USER, Authority.TESTE] },
     },
     {
       path: 'customer',
@@ -93,43 +95,43 @@ export default {
       path: 'customer/new',
       name: 'CustomerCreate',
       component: CustomerUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'customer/:customerId/edit',
       name: 'CustomerEdit',
       component: CustomerUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'customer/:customerId/view',
       name: 'CustomerView',
       component: CustomerDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.USER, Authority.TESTE] },
     },
     {
       path: 'address',
       name: 'Address',
       component: Address,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'address/new',
       name: 'AddressCreate',
       component: AddressUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'address/:addressId/edit',
       name: 'AddressEdit',
       component: AddressUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'address/:addressId/view',
       name: 'AddressView',
       component: AddressDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'wish-list',
@@ -141,43 +143,43 @@ export default {
       path: 'wish-list/new',
       name: 'WishListCreate',
       component: WishListUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'wish-list/:wishListId/edit',
       name: 'WishListEdit',
       component: WishListUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.ADMIN] },
     },
     {
       path: 'wish-list/:wishListId/view',
       name: 'WishListView',
       component: WishListDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.USER, Authority.TESTE] },
     },
     {
       path: 'palha',
       name: 'Palha',
       component: Palha,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.TESTE, Authority.ADMIN] },
     },
     {
       path: 'palha/new',
       name: 'PalhaCreate',
       component: PalhaUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.TESTE, Authority.ADMIN] },
     },
     {
       path: 'palha/:palhaId/edit',
       name: 'PalhaEdit',
       component: PalhaUpdate,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.TESTE, Authority.ADMIN] },
     },
     {
       path: 'palha/:palhaId/view',
       name: 'PalhaView',
       component: PalhaDetails,
-      meta: { authorities: [Authority.USER] },
+      meta: { authorities: [Authority.TESTE, Authority.ADMIN] },
     },
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ],

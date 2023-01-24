@@ -2,23 +2,23 @@
   "jhipsterapp001App": {
     "palha": {
       "home": {
-        "title": "Júlia Palha",
+        "title": "Palhas",
         "refreshListLabel": "Refresh list",
-        "createLabel": "Create new content",
-        "createOrEditLabel": "Create or edit content",
-        "notFound": "Content not found"
+        "createLabel": "Create a new Palha",
+        "createOrEditLabel": "Create or edit a Palha",
+        "notFound": "No Palhas found"
       },
-      "created": "A new content for Palha is created with identifier '{{ param }}'",
-      "updated": "A content for Palha is updated with identifier {{ param }}",
-      "deleted": "A Palha content is deleted with identifier {{ param }}",
+      "created": "A new Palha is created with identifier {{ param }}",
+      "updated": "A Palha is updated with identifier {{ param }}",
+      "deleted": "A Palha is deleted with identifier {{ param }}",
       "delete": {
-        "question": "Are you sure you want to delete Palha #{{ id }}?"
+        "question": "Are you sure you want to delete Palha {{ id }}?"
       },
       "detail": {
-        "title": "Júlia Palha"
+        "title": "Palha"
       },
       "id": "ID",
-      "julia": "Tamanho"
+      "julia": "Julia"
     }
   }
 }

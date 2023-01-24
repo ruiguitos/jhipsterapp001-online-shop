@@ -47,6 +47,8 @@ const loginService = new LoginService();
 const accountService = new AccountService(store, translationService, (<any>Vue).cookie, router);
 
 router.beforeEach(async (to, from, next) => {
+  console.log(to, from, next)
+
   if (!to.matched.length) {
     next('/not-found');
   } else if (to.meta && to.meta.authorities && to.meta.authorities.length > 0) {

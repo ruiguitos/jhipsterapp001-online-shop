@@ -1,6 +1,8 @@
 import Component from 'vue-class-component';
 import { Inject, Vue } from 'vue-property-decorator';
 import LoginService from '@/account/login.service';
+import { required, minLength, email } from 'vuelidate/lib/validators'
+import axios from 'axios'
 
 @Component
 export default class Home extends Vue {
@@ -18,4 +20,6 @@ export default class Home extends Vue {
   public get username(): string {
     return this.$store.getters.account?.login ?? '';
   }
+
+
 }
